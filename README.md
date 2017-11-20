@@ -1,7 +1,7 @@
 # asch-general
 
 ### Clone to local
-git clone https://github.com/dujunhui007/asch-general.git
+git clone https://dujunhui007.github.io/view-the-word/
 
 ### Running environment
 - npm install
