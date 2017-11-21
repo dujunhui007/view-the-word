@@ -171,8 +171,7 @@ nav {
 }
 
 .homeContainer {
-  padding: 0 10%;
-  height: 2000px;
+  padding: 0 10% 20px 10%;
   background: #ebeef3;
   .advertisingGroups {
     padding-top: 20px;
@@ -208,6 +207,7 @@ nav {
     }
   }
   .centerContainer {
+    margin-bottom: 20px;
     position: relative;
     .homeContainerLeft {
       width: 68%;
@@ -683,7 +683,7 @@ nav {
           }
         }
       }
-      .advertisingGroupsRightTwo{
+      .advertisingGroupsRightTwo {
         width: 100%;
         margin-bottom: 20px;
         a {
@@ -704,12 +704,531 @@ nav {
       }
     }
   }
+  .allLists {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    .newsList {
+      width: 32%;
+      border-radius: 5px;
+      background: #fff;
+      .newsListTitle {
+        height: 40px;
+        line-height: 40px;
+        padding-left: 20px;
+        background: #3498db;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        i {
+          display: inline-block;
+          width: 14px;
+          height: 14px;
+          background: url("../images/newsIcon.png") no-repeat center center;
+          background-size: cover;
+          margin-right: 3px;
+        }
+        span {
+          display: inline-block;
+          vertical-align: top;
+          font-size: 14px;
+        }
+      }
+      ul {
+        padding: 5px 20px;
+        li:nth-child(1) {
+          span {
+            font-weight: 600;
+          }
+          i {
+            background: url("../images/hot.png") no-repeat center center;
+            background-size: cover;
+          }
+        }
+        li:nth-child(2) {
+          span {
+            font-weight: 600;
+          }
+          i {
+            background: url("../images/hot.png") no-repeat center center;
+            background-size: cover;
+          }
+        }
+        li:nth-child(3) {
+          span {
+            font-weight: 600;
+          }
+          i {
+            background: url("../images/hot.png") no-repeat center center;
+            background-size: cover;
+          }
+        }
+        li:last-child {
+          border-bottom: none;
+        }
+        li:hover {
+          a {
+            color: #3498db;
+          }
+        }
+        li {
+          position: relative;
+          border-bottom: 1px solid #ccc;
+          height: 50px;
+          line-height: 50px;
+          margin-bottom: 10px;
+          span {
+            color: #ff6000;
+            display: inline-block;
+            width: 18px;
+          }
+          a {
+            display: inline-block;
+            width: 80%;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            vertical-align: top;
+            font-size: 14px;
+          }
+          i {
+            position: absolute;
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            right: 0;
+            top: 18px;
+            background: url("../images/new.png") no-repeat center center;
+            background-size: cover;
+          }
+        }
+      }
+    }
+    .rewardList {
+      width: 32%;
+      border-radius: 5px;
+      background: #fff;
+      .rewardListTitle {
+        height: 40px;
+        line-height: 40px;
+        padding-left: 20px;
+        font-size: 14px;
+        background: #e74c3c;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        color: #fff;
+        padding-right: 20px;
+        .rewardListTitleLeft {
+          display: inline-block;
+          i {
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            background: url("../images/reward.png") no-repeat center center;
+            background-size: cover;
+          }
+          span {
+            display: inline-block;
+          }
+        }
+        .rewardListTitleRight {
+          display: inline-block;
+          height: 100%;
+          float: right;
+          color: #ccc;
+          .rewardDay:hover {
+            color: #fff;
+          }
+          .rewardDay {
+            display: inline-block;
+            cursor: pointer;
+          }
+          .rewardWeek:hover {
+            color: #fff;
+          }
+          .rewardWeek {
+            display: inline-block;
+            cursor: pointer;
+          }
+          .rewardMonth:hover {
+            color: #fff;
+          }
+          .rewardMonth {
+            display: inline-block;
+            cursor: pointer;
+          }
+          i {
+            display: inline-block;
+            border-right: 1px solid #ccc;
+            height: 30%;
+            margin: 0 5px;
+          }
+        }
+
+      }
+      ul.rewardDayContainer {
+        padding: 5px 20px;
+        li:nth-child(1) {
+          span {
+            width: 14px;
+            height: 14px;
+            background: url("../images/goldenCup.png") no-repeat center center;
+            background-size: cover;
+          }
+          i {
+          }
+        }
+        li:nth-child(2) {
+          span {
+            width: 14px;
+            height: 14px;
+            background: url("../images/silverCup.png") no-repeat center center;
+            background-size: cover;
+          }
+          i {
+          }
+        }
+        li:nth-child(3) {
+          span {
+            width: 14px;
+            height: 14px;
+            background: url("../images/copperCup.png") no-repeat center center;
+            background-size: cover;
+          }
+          i {
+          }
+        }
+        li:last-child {
+          border-bottom: none;
+        }
+        li:hover {
+          a {
+            color: #ff6000;
+          }
+          i {
+            color: #ff6000;
+          }
+        }
+        li {
+          position: relative;
+          border-bottom: 1px solid #ccc;
+          height: 50px;
+          line-height: 50px;
+          margin-bottom: 10px;
+          span {
+            width: 18px;
+            color: #ff6000;
+            display: inline-block;
+          }
+          a {
+            display: inline-block;
+            width: 80%;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            vertical-align: top;
+            font-size: 14px;
+          }
+          i {
+            position: absolute;
+            display: inline-block;
+            right: 0;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    .browseList {
+      width: 32%;
+      border-radius: 5px;
+      background: #fff;
+      .browseListTitle {
+        height: 40px;
+        line-height: 40px;
+        padding-left: 20px;
+        font-size: 14px;
+        background: #f1c40f;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        color: #fff;
+        padding-right: 20px;
+        .browseListTitleLeft {
+          display: inline-block;
+          i {
+            display: inline-block;
+            width: 23px;
+            height: 14px;
+            background: url("../images/browseListIcon.png") no-repeat center center;
+            background-size: cover;
+          }
+          span {
+            display: inline-block;
+          }
+        }
+        .browseListTitleRight {
+          display: inline-block;
+          height: 100%;
+          float: right;
+          color: #ccc;
+          .browseDay:hover {
+            color: #fff;
+          }
+          .browseDay {
+            display: inline-block;
+            cursor: pointer;
+          }
+          .browseWeek:hover {
+            color: #fff;
+          }
+          .browseWeek {
+            display: inline-block;
+            cursor: pointer;
+          }
+          .browseMonth:hover {
+            color: #fff;
+          }
+          .browseMonth {
+            display: inline-block;
+            cursor: pointer;
+          }
+          i {
+            display: inline-block;
+            border-right: 1px solid #ccc;
+            height: 30%;
+            margin: 0 5px;
+          }
+        }
+      }
+      ul.browseDayContainer {
+        padding: 5px 20px;
+        li:nth-child(1) {
+          span {
+            width: 13px;
+            height: 16px;
+            background: url("../images/goldMedal.png") no-repeat center center;
+            background-size: cover;
+          }
+          i {
+          }
+        }
+        li:nth-child(2) {
+          span {
+            width: 13px;
+            height: 16px;
+            background: url("../images/silverMedal .png") no-repeat center center;
+            background-size: cover;
+          }
+          i {
+          }
+        }
+        li:nth-child(3) {
+          span {
+            width: 13px;
+            height: 16px;
+            background: url("../images/copperMedal.png") no-repeat center center;
+            background-size: cover;
+          }
+          i {
+          }
+        }
+        li:last-child {
+          border-bottom: none;
+        }
+        li:hover {
+          a {
+            color: #f1c40f;
+          }
+          i {
+            color: #f1c40f;
+          }
+        }
+        li {
+          position: relative;
+          border-bottom: 1px solid #ccc;
+          height: 50px;
+          line-height: 50px;
+          margin-bottom: 10px;
+          span {
+            width: 18px;
+            color: #ff6000;
+            display: inline-block;
+          }
+          a {
+            display: inline-block;
+            width: 80%;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            vertical-align: top;
+            font-size: 14px;
+          }
+          i {
+            position: absolute;
+            display: inline-block;
+            right: 0;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+  .writersList {
+    margin-bottom: 50px;
+    position: relative;
+    .writersListTitle {
+      height: 40px;
+      line-height: 40px;
+      background: #ccc;
+      padding-left: 20px;
+      font-weight: 600;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+    ul {
+      padding: 20px 40px 80px 40px;
+      width: 100%;
+      background: #fff;
+      box-sizing: border-box;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      li {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        .writer {
+          display: inline-block;
+          width: 150px;
+          a {
+            position: relative;
+            display: block;
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            text-align: center;
+            background: #ccc;
+            margin-left: 15px;
+            span {
+              position: absolute;
+              top: 5px;
+              left: 5px;
+              display: block;
+              width: 100px;
+              height: 100px;
+              border-radius: 50%;
+              background: url(../images/liudehua.jpg) no-repeat center center;
+              background-size: cover;
+            }
+          }
+          p {
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+          }
+        }
+
+      }
+    }
+    .writersDot {
+      position: absolute;
+      width: 100%;
+      display: block;
+      text-align: center;
+      z-index: 999;
+      bottom: 30px;
+      span:hover {
+        width: 12px;
+        height: 12px;
+        cursor: pointer;
+        background: url("../images/dot.png") no-repeat center center;
+        background-size: cover;
+      }
+      span {
+        width: 12px;
+        height: 12px;
+        background: #ccc;
+        border-radius: 50%;
+        display: inline-block;
+        margin-right: 3px;
+      }
+    }
+  }
 }
 
 .footer {
-  height: 500px;
-  line-height: 500px;
-  margin-top: 100px;
-  text-align: center;
-  background: lightskyblue;
+  padding: 40px 10% 0 10%;
+  background: #242424;
+  color: #ccc;
+  font-size: 14px;
+  .footerTop {
+    position: relative;
+    width: 100%;
+    p {
+      width: 75%;
+      margin-bottom: 30px;
+      color: #fff;
+    }
+    .footerLinks {
+      width: 75%;
+      a:hover{
+        color: #3498db;
+      }
+      a {
+        display: inline-block;
+        color: #ccc;
+        margin-right: 20px;
+        font-size: 12px;
+        margin-bottom: 20px;
+      }
+    }
+    .qrCode {
+      position: absolute;
+      top:0;
+      right: 0;
+      .newCode{
+        display: inline-block;
+        margin-right: 20px;
+      }
+      .oldCode{
+        display: inline-block;
+      }
+      span{
+        display: block;
+        width: 120px;
+        height: 120px;
+        background:url("../images/newQrCode.png") no-repeat center center ;
+        background-size: cover;
+      }
+      p{
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+      }
+    }
+  }
+  .footerBottom{
+    border-top: 1px solid #313131;
+    margin-top: 50px;
+    height: 80px;
+    line-height: 80px;
+    span{
+      display: inline-block;
+    }
+    .footerBottomRight{
+      display: inline-block;
+      float: right;
+      a:hover{
+        cursor: pointer;
+        color: #3498db;
+      }
+      a{
+        display: inline-block;
+        color: #ccc;
+        margin-right: 20px;
+      }
+    }
+  }
 }
