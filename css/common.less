@@ -1,0 +1,82 @@
+.deScroll {
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+.footer {
+  padding: 20px 10% 0 10%;
+  background: #242424;
+  color: #ccc;
+  font-size: 14px;
+  .footerTop {
+    position: relative;
+    width: 100%;
+    p {
+      width: 75%;
+      margin-bottom: 30px;
+      color: #fff;
+    }
+    .footerLinks {
+      width: 75%;
+      a:hover{
+        color: #3498db;
+      }
+      a {
+        display: inline-block;
+        color: #ccc;
+        margin-right: 20px;
+        font-size: 12px;
+        margin-bottom: 20px;
+      }
+    }
+    .qrCode {
+      position: absolute;
+      top:0;
+      right: 0;
+      .newCode{
+        display: inline-block;
+        margin-right: 20px;
+      }
+      .oldCode{
+        display: inline-block;
+      }
+      span{
+        display: block;
+        width: 120px;
+        height: 120px;
+        background:url("../images/newQrCode.png") no-repeat center center ;
+        background-size: cover;
+      }
+      p{
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+      }
+    }
+  }
+  .footerBottom{
+    border-top: 1px solid #313131;
+    margin-top: 40px;
+    height: 80px;
+    line-height: 80px;
+    span{
+      display: inline-block;
+    }
+    .footerBottomRight{
+      display: inline-block;
+      float: right;
+      a:hover{
+        cursor: pointer;
+        color: #3498db;
+      }
+      a{
+        display: inline-block;
+        color: #ccc;
+        margin-right: 20px;
+      }
+    }
+  }
+}
