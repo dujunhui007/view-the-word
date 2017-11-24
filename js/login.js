@@ -4,7 +4,7 @@ $(document).ready(function () {
   $(".loginCenter .loginTo .loginToHome .loginBtn").click(function () {
     // alert(password);
     // window.location.href = "index.html?" + "password=" + password;
-    window.location.href = "myColumn.html";
+    window.location.href = "personalCenter.html";
   })
 
 });
