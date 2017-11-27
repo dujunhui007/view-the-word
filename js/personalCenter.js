@@ -17,9 +17,9 @@ $(document).ready(function () {
     return theRequest;
   }
 
-  var particularVal = getUrlRequest().id;
-  var imgArr=[
-   "https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1432134302,674176113&fm=27&gp=0.jpg",
+  var particularIndex = getUrlRequest().index;
+  var imgArr = [
+    "https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1432134302,674176113&fm=27&gp=0.jpg",
     "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1511762664031&di=2ccd3aba3cf5a2a3f75d05e5366d101c&imgtype=0&src=http%3A%2F%2Fauto.eastday.com%2Fauto%2F08auto%2Fnode17413%2Fnode18286%2Fimages%2F00099421.jpg",
     "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3748104919,4225404315&fm=27&gp=0.jpg",
     "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1511762703810&di=59241f4100e6631e441742da151d1dad&imgtype=0&src=http%3A%2F%2Fd.hiphotos.baidu.com%2Fbaike%2Fpic%2Fitem%2F7dd98d1001e93901b24f585472ec54e736d1960f.jpg",
@@ -30,30 +30,38 @@ $(document).ready(function () {
     "https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1884938577,2163939794&fm=27&gp=0.jpg",
     "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2009420797,1537131051&fm=27&gp=0.jpg"
   ];
-  var index = Math.floor((Math.random()*imgArr.length));
   var imgUrl;
+  imgUrl = imgArr[particularIndex];
+  $(".personalHeaderContainer .header .headerRight .rightLoginImg img").attr("src", imgUrl);
+  $(".personalContainer .personalContainerLeft .personalHeaderImg").attr("src", imgUrl);
 
-  if (particularVal) {
-    imgUrl=imgArr[index];
-    console.log(imgArr[index]);
+  $(".personalContainer .personalContainerLeft ul li .datumBlock").click(function () {
+    $(".personalContainer .personalContainerRight .datum").css("display", "block");
+    $(".personalContainer .personalContainerRight .messages").css("display", "none");
+    $(".personalContainer .personalContainerRight .awaitMessages").css("display", "none");
 
-    $(".homeHeaderContainer .header .headerRight .rightLogin").css("display", "none");
-    $(".homeHeaderContainer .header .headerRight .rightEnter").css("display", "none");
-    $(".homeHeaderContainer .header .headerRight .rightLoginImg").css("display", "inline-block");
-    $(".homeHeaderContainer .header .headerRight .rightLoginImg img").attr("src", imgUrl);
-    $(".homeHeaderContainer .header .headerRight .rightEnterName").css("display", "inline-block");
+  });
+
+  $(".personalContainer .personalContainerLeft ul li .messagesBlock").click(function () {
+    $(".personalContainer .personalContainerRight .datum").css("display", "none");
+    $(".personalContainer .personalContainerRight .messages").css("display", "block");
+    $(".personalContainer .personalContainerRight .awaitMessages").css("display", "none");
+  });
+
+  $(".personalContainer .personalContainerLeft ul li .awaitBlock").click(function () {
+    $(".personalContainer .personalContainerRight .datum").css("display", "none");
+    $(".personalContainer .personalContainerRight .messages").css("display", "none");
+    $(".personalContainer .personalContainerRight .awaitMessages").css("display", "block");
+  });
 
 
-    $(".homeHeaderContainer .header .headerRight .rightLoginImg img").click(function () {
-      window.location.href = "personalCenter.html?" + "index=" + index;
-      }
-    );
-    $(".homeHeaderContainer .header .headerRight .rightEnterName").click(function () {
-      window.location.href = "personalCenter.html?" + "index=" + index;
-    })
-  } else {
-    alert("请先登录");
-  }
+
+  $(".personalContainer .personalContainerLeft ul li a").click(function () {
+    window.location.href = "myColumn.html?" + "index=" + particularIndex;
+  })
+
+
+
 
 
 });

@@ -18,19 +18,29 @@
       right: 0px;
       display: inline-block;
       height: 50px;
-      .rightLogin {
-        display: inline-block;
-        width: 45px;
-        height: 45px;
-        border-radius: 50%;
-        background: url(../images/liudehua.jpg) no-repeat center center;
-        background-size: cover;
-        margin-right: 5px;
+      .rightLoginImg:hover {
+        //box-shadow: 1px 1px 2px #3498db
+        background: #ccc;
       }
-      .rightEnter:hover {
+      .rightLoginImg {
+        display: inline-block;
+        width: 48px;
+        height: 48px;
+        line-height: 50px;
+        text-align: center;
+        border-radius: 50%;
+        img {
+          margin-top: 1px;
+          display: inline-block;
+          width: 46px;
+          height: 46px;
+          border-radius: 50%;
+        }
+      }
+      .rightEnterName:hover {
         color: #3498db;
       }
-      .rightEnter {
+      .rightEnterName {
         display: inline-block;
         height: 50px;
         line-height: 50px;
@@ -39,10 +49,221 @@
     }
   }
 }
-.personalContainer{
+
+.personalContainer {
   position: relative;
   padding: 20px 10%;
   width: 100%;
-  height: 500px;
   background: #ebeef3;
+  box-sizing: content-box;
+  .personalContainerLeft {
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+    background: #fff;
+    padding-top: 30px;
+    border-radius: 5px;
+    .personalHeaderImg {
+      display: block;
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      margin-left: calc(~"50% - 50px");
+      margin-bottom: 30px;
+    }
+    ul {
+      padding-bottom: 150px;
+      li:hover {
+        border-left: 5px solid #3598db;
+        background: #f6f6f6;
+      }
+      li {
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+
+        i {
+
+        }
+        span:hover {
+          color: #3598db;
+        }
+        span {
+          cursor: pointer;
+        }
+        a:hover {
+          color: #3598db;
+        }
+        a {
+          cursor: pointer;
+        }
+      }
+    }
+
+  }
+
+  .personalContainerRight {
+    display: inline-block;
+    width: calc(~"60% - 60px");
+    vertical-align: top;
+    background: #fff;
+    margin-left: 20px;
+    border-radius: 5px;
+
+    .datum {
+      padding: 20px 20px 80px 20px;
+      display: block;
+      .personalDatum {
+        height: 40px;
+        line-height: 40px;
+        text-align: left;
+        font-weight: 600;
+        border-bottom: 1px solid #ccc;
+        span {
+          display: block;
+          width: 100px;
+          height: 37px;
+          line-height: 37px;
+          text-align: center;
+          border-bottom: 3px solid #3498db;
+        }
+      }
+      .personalDatumContainer {
+        width: 50%;
+        margin-left: 25%;
+        margin-top: 50px;
+        .datumHeaderImg {
+          height: 150px;
+          width: 150px;
+          margin-left: calc(~"50% - 75px");
+          img:hover {
+            border: 3px solid lightskyblue;
+          }
+          img {
+            display: block;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            margin-left: 25px;
+            border: 3px solid #ccc;
+          }
+          p {
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 15px;
+            font-weight: 600;
+          }
+        }
+        .personalAddress {
+          p {
+            height: 50px;
+
+            span {
+              display: inline-block;
+              height: 50px;
+              line-height: 50px;
+              font-size: 13px;
+            }
+          }
+        }
+        .saveBtn {
+          width: 100%;
+          text-align: center;
+          margin-top: 30px;
+          button {
+            width: 150px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            background: #3598db;
+          }
+        }
+      }
+    }
+    .messages {
+      display: none;
+      padding: 20px 20px;
+      .personalMessages {
+        height: 40px;
+        line-height: 40px;
+        text-align: left;
+        font-weight: 600;
+        border-bottom: 1px solid #ccc;
+        span {
+          display: block;
+          width: 100px;
+          height: 37px;
+          line-height: 37px;
+          text-align: center;
+          border-bottom: 3px solid #3498db;
+        }
+      }
+      ul {
+        margin-top: 20px;
+        li:last-child {
+          border-bottom: none;
+        }
+        li:hover {
+          background: #f6f6f6;
+          color: lightskyblue;
+        }
+        li {
+          height: 40px;
+          line-height: 40px;
+          text-align: left;
+          cursor: pointer;
+          border-bottom: 1px solid #ccc;
+          p {
+
+          }
+        }
+      }
+    }
+    .awaitMessages {
+      display: none;
+      padding: 20px 20px;
+      .personalMessages {
+        height: 40px;
+        line-height: 40px;
+        text-align: left;
+        font-weight: 600;
+        border-bottom: 1px solid #ccc;
+        span {
+          display: block;
+          width: 100px;
+          height: 37px;
+          line-height: 37px;
+          text-align: center;
+          border-bottom: 3px solid #3498db;
+        }
+      }
+      ul {
+        margin-top: 20px;
+        li:last-child {
+          border-bottom: none;
+        }
+        li:hover {
+          background: #f6f6f6;
+          color: lightskyblue;
+          a{
+            color:lightskyblue ;
+          }
+        }
+        li {
+          height: 40px;
+          line-height: 40px;
+          text-align: left;
+          cursor: pointer;
+          border-bottom: 1px solid #ccc;
+          p {
+
+          }
+        }
+      }
+    }
+  }
 }
