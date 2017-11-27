@@ -56,6 +56,9 @@ $(document).ready(function () {
     $(".personalContainer .personalContainerRight .awaitMessages").css("display", "block");
   });
 
+  $(".personalContainer .personalContainerLeft ul li.toMyColumn").click(function () {
+    window.location.href = "myColumn.html?" + "index=" + particularIndex;
+  });
 
   $(".personalContainer .personalContainerLeft ul li a").click(function () {
     window.location.href = "myColumn.html?" + "index=" + particularIndex;

@@ -32,8 +32,16 @@ $(document).ready(function () {
   ];
   var imgUrl;
   imgUrl = imgArr[particularIndex];
-  // alert(imgUrl);
+
   $(".myColumnHeaderContainer .header .headerRight .rightLoginImg img").attr("src", imgUrl);
+
+  $(".myColumnHeaderContainer .header .headerRight .rightLoginImg img").click(function () {
+      window.location.href = "personalCenter.html?" + "index=" + particularIndex;
+    }
+  );
+  $(".myColumnHeaderContainer .header .headerRight .rightEnterName").click(function () {
+    window.location.href = "personalCenter.html?" + "index=" + particularIndex;
+  })
 
 
 });
