@@ -36,7 +36,7 @@ $(document).ready(function () {
   $(".personalContainer .personalContainerLeft .personalHeaderImg").attr("src", imgUrl);
   $(".personalContainer .personalContainerRight .datum .personalDatumContainer .datumHeaderImg img").attr("src", imgUrl);
 
-  $(".personalContainer .personalContainerLeft ul li .datumBlock").click(function () {
+  $(".personalContainer .personalContainerLeft ul li.datumBlock").click(function () {
     $(".personalContainer .personalContainerRight .datum").css("display", "block");
     $(".personalContainer .personalContainerRight .datum .personalDatumContainer .datumHeaderImg img").attr("src", imgUrl);
     $(".personalContainer .personalContainerRight .messages").css("display", "none");
@@ -44,13 +44,13 @@ $(document).ready(function () {
 
   });
 
-  $(".personalContainer .personalContainerLeft ul li .messagesBlock").click(function () {
+  $(".personalContainer .personalContainerLeft ul li.messagesBlock").click(function () {
     $(".personalContainer .personalContainerRight .datum").css("display", "none");
     $(".personalContainer .personalContainerRight .messages").css("display", "block");
     $(".personalContainer .personalContainerRight .awaitMessages").css("display", "none");
   });
 
-  $(".personalContainer .personalContainerLeft ul li .awaitBlock").click(function () {
+  $(".personalContainer .personalContainerLeft ul li.awaitBlock").click(function () {
     $(".personalContainer .personalContainerRight .datum").css("display", "none");
     $(".personalContainer .personalContainerRight .messages").css("display", "none");
     $(".personalContainer .personalContainerRight .awaitMessages").css("display", "block");
