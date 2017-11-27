@@ -34,9 +34,11 @@ $(document).ready(function () {
   imgUrl = imgArr[particularIndex];
   $(".personalHeaderContainer .header .headerRight .rightLoginImg img").attr("src", imgUrl);
   $(".personalContainer .personalContainerLeft .personalHeaderImg").attr("src", imgUrl);
+  $(".personalContainer .personalContainerRight .datum .personalDatumContainer .datumHeaderImg img").attr("src", imgUrl);
 
   $(".personalContainer .personalContainerLeft ul li .datumBlock").click(function () {
     $(".personalContainer .personalContainerRight .datum").css("display", "block");
+    $(".personalContainer .personalContainerRight .datum .personalDatumContainer .datumHeaderImg img").attr("src", imgUrl);
     $(".personalContainer .personalContainerRight .messages").css("display", "none");
     $(".personalContainer .personalContainerRight .awaitMessages").css("display", "none");
 
@@ -53,7 +55,6 @@ $(document).ready(function () {
     $(".personalContainer .personalContainerRight .messages").css("display", "none");
     $(".personalContainer .personalContainerRight .awaitMessages").css("display", "block");
   });
-
 
 
   $(".personalContainer .personalContainerLeft ul li a").click(function () {
