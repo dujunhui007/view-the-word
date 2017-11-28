@@ -1,0 +1,194 @@
+.joinHeaderContainer {
+  padding: 0 10%;
+  .header {
+    position: relative;
+    margin-top: 10px;
+    height: 50px;
+    .logo {
+      display: inline-block;
+      margin-top: 10px;
+      height: 30px;
+      width: 150px;
+      background: url("../images/logo.png") no-repeat center center;
+      background-size: cover;
+    }
+    .headerRight {
+      cursor: pointer;
+      position: absolute;
+      right: 0px;
+      display: inline-block;
+      height: 50px;
+      .rightLogin {
+        display: inline-block;
+        width: 50px;
+        height: 20px;
+        line-height: 20px;
+        border-right: 1px solid #b3b3b3;
+        margin-right: 10px;
+        color: #3498db;
+      }
+      .rightEnter:hover {
+        color: #3498db;
+      }
+      .rightEnter {
+        display: inline-block;
+        height: 50px;
+        line-height: 50px;
+      }
+      .rightLoginImg:hover {
+        //box-shadow: 1px 1px 2px #3498db
+        background: #ccc;
+      }
+      .rightLoginImg {
+        display: none;
+        width: 48px;
+        height: 48px;
+        line-height: 50px;
+        text-align: center;
+        border-radius: 50%;
+        img {
+          margin-top: 1px;
+          display: inline-block;
+          width: 46px;
+          height: 46px;
+          border-radius: 50%;
+        }
+      }
+      .rightEnterName:hover {
+        color: #3498db;
+      }
+      .rightEnterName {
+        display: none;
+        height: 50px;
+        line-height: 50px;
+        vertical-align: top;
+      }
+    }
+  }
+}
+
+.joinContainer {
+  padding: 20px 10% 20px 10%;
+  background: #ebeef3;
+
+  .joinCenter {
+    padding: 40px 0px;
+    background: #fff;
+    width: 100%;
+    border-radius: 5px;
+    box-sizing: border-box;
+    .joinCenterTop {
+      padding: 0 10%;
+      p:nth-child(1) {
+        font-size: 18px;
+      }
+      p:nth-child(2) {
+        margin-bottom: 20px;
+      }
+      p {
+        width: 100%;
+        height: 30px;
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 30px;
+        text-align: center;
+      }
+      span {
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+      }
+    }
+    .joinCenterMiddle {
+      margin-top: 50px;
+      width: 100%;
+      background: url("../images/loginBackground.png") no-repeat center center;
+      background-size: cover;
+      height: 220px;
+      p:nth-child(1) {
+        font-size: 18px;
+        //font-weight: 600;
+      }
+      p:nth-child(2) {
+        margin-bottom: 20px;
+      }
+      p {
+        width: 100%;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        color: #fff;
+        padding: 20px 10% 0 10%;
+        box-sizing: border-box;
+        font-weight: 600;
+      }
+      span {
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+        color: #fff;
+        padding: 0 10%;
+        box-sizing: border-box;
+      }
+    }
+    .contactUs {
+      padding: 0 10%;
+      p:nth-child(1) {
+        font-size: 18px;
+      }
+      p:nth-child(2) {
+        margin-bottom: 20px;
+      }
+      p {
+        width: 100%;
+        height: 30px;
+        font-size: 15px;
+        line-height: 30px;
+        text-align: center;
+        font-weight: 600;
+      }
+      .contactUsContainer {
+        display: flex;
+        justify-content: space-between;
+        .mailbox:nth-child(2){
+          span{
+            background: url("../images/collaborate.png") no-repeat center center;
+            background-size: cover;
+          }
+        }
+        .mailbox:nth-child(3){
+
+          span{
+            width: 50px;
+            height: 50px;
+            background: url("../images/qq.png") no-repeat center center;
+            background-size: cover;
+          }
+        }
+        .mailbox {
+          span {
+            display: inline-block;
+            height: 50px;
+            width: 55px;
+            background: url("../images/mail.png") no-repeat center center;
+            background-size: cover;
+          }
+          .RightContainer {
+            float: right;
+            p:nth-child(1){
+              font-size: 16px;
+            }
+            p {
+              height: 20px;
+              line-height: 20px;
+              text-align: center;
+              font-size: 14px;
+              margin: 5px;
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
