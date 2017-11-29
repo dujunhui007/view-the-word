@@ -41,6 +41,10 @@ $(document).ready(function () {
   );
   $(".myColumnHeaderContainer .header .headerRight .rightEnterName").click(function () {
     window.location.href = "personalCenter.html?" + "index=" + particularIndex;
+  });
+
+  $(".myColumnContainer .myColumnContainerLeft .detailsColumns ul li .articleRight .articleTitle").click(function () {
+    window.location.href="articleDetails.html"
   })
 
 
