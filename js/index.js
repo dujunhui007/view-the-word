@@ -37,18 +37,18 @@ $(document).ready(function () {
     imgUrl = imgArr[index];
     console.log(imgArr[index]);
 
-    $(".homeHeaderContainer .header .headerRight .rightLogin").css("display", "none");
-    $(".homeHeaderContainer .header .headerRight .rightEnter").css("display", "none");
-    $(".homeHeaderContainer .header .headerRight .rightLoginImg").css("display", "inline-block");
-    $(".homeHeaderContainer .header .headerRight .rightLoginImg img").attr("src", imgUrl);
-    $(".homeHeaderContainer .header .headerRight .rightEnterName").css("display", "inline-block");
+    $(".headerContainer .header .headerRight .rightLogin").css("display", "none");
+    $(".headerContainer .header .headerRight .rightEnter").css("display", "none");
+    $(".headerContainer .header .headerRight .rightLoginImg").css("display", "inline-block");
+    $(".headerContainer .header .headerRight .rightLoginImg img").attr("src", imgUrl);
+    $(".headerContainer .header .headerRight .rightEnterName").css("display", "inline-block");
 
 
-    $(".homeHeaderContainer .header .headerRight .rightLoginImg img").click(function () {
+    $(".headerContainer .header .headerRight .rightLoginImg img").click(function () {
         window.location.href = "personalCenter.html?" + "index=" + index;
       }
     );
-    $(".homeHeaderContainer .header .headerRight .rightEnterName").click(function () {
+    $(".headerContainer .header .headerRight .rightEnterName").click(function () {
       window.location.href = "personalCenter.html?" + "index=" + index;
     })
   } else {
