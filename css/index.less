@@ -625,21 +625,58 @@
         height: 40px;
         line-height: 40px;
         padding-left: 20px;
-        background: #3498db;
+        font-size: 14px;
+        background: #3598db;
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
-        i {
+        color: #fff;
+        padding-right: 20px;
+        .newsListTitleLeft {
           display: inline-block;
-          width: 14px;
-          height: 14px;
-          background: url("../images/newsIcon.png") no-repeat center center;
-          background-size: cover;
-          margin-right: 3px;
+          i {
+            display: inline-block;
+            width: 16px;
+            height: 17px;
+            background: url(../images/newsIcon.png) no-repeat center center;
+            background-size: cover;
+            vertical-align: text-top;
+          }
+          span {
+            display: inline-block;
+          }
         }
-        span {
+        .newsListTitleRight {
           display: inline-block;
-          vertical-align: top;
-          font-size: 14px;
+          height: 100%;
+          float: right;
+          color: #ccc;
+          .rewardDay:hover {
+            color: #fff;
+          }
+          .rewardDay {
+            display: inline-block;
+            cursor: pointer;
+          }
+          .rewardWeek:hover {
+            color: #fff;
+          }
+          .rewardWeek {
+            display: inline-block;
+            cursor: pointer;
+          }
+          .rewardMonth:hover {
+            color: #fff;
+          }
+          .rewardMonth {
+            display: inline-block;
+            cursor: pointer;
+          }
+          i {
+            display: inline-block;
+            border-right: 1px solid #ccc;
+            height: 30%;
+            margin: 0 5px;
+          }
         }
       }
       ul {
@@ -730,10 +767,11 @@
           display: inline-block;
           i {
             display: inline-block;
-            width: 14px;
-            height: 14px;
-            background: url("../images/reward.png") no-repeat center center;
+            width: 16px;
+            height: 16px;
+            background: url(../images/reward.png) no-repeat center center;
             background-size: cover;
+            vertical-align: sub;
           }
           span {
             display: inline-block;
@@ -772,7 +810,6 @@
             margin: 0 5px;
           }
         }
-
       }
       ul.rewardDayContainer {
         padding: 5px 20px;
@@ -865,9 +902,10 @@
           i {
             display: inline-block;
             width: 23px;
-            height: 14px;
-            background: url("../images/browseListIcon.png") no-repeat center center;
+            height: 15px;
+            background: url(../images/browseListIcon.png) no-repeat center center;
             background-size: cover;
+            vertical-align: sub;
           }
           span {
             display: inline-block;
