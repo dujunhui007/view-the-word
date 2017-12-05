@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta charset="UTF-8">
     <link href="images/favicon.ico" rel="shortcut icon">
     <title>publish article</title>
     <link rel="stylesheet" href="./css/reset.min.css">
@@ -67,6 +66,25 @@
     </ul>
 </nav>
 <div class="publishContainer">
+    <div class="editorContainer">
+        <input type="text" placeholder="请输入标题，1-60个字">
+        <div id="editor">
+            <p>请输入正文，<b></b>1-6000个字...</p>
+        </div>
+        <div class="statement">
+         原创：
+            <span>未声明</span>
+            <span>声明</span>
+        </div>
+        <div class="bvsAddress">
+            <p>币世界地址：</p>
+            <input type="text">
+        </div>
+        <div class="publishPreview">
+            <button>发布</button>
+            <button>预览</button>
+        </div>
+    </div>
 
 </div>
 <div class="footer">
@@ -113,7 +131,16 @@
         </div>
     </div>
 </div>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/wangEditor.min.js"></script>
 <script type="text/javascript" src="js/jquery-1.9.1.js"></script>
 <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript">
+  var E = window.wangEditor;
+  var editor = new E('#editor');
+  // 或者 var editor = new E( document.getElementById('#editor') )
+   editor.customConfig.uploadImgShowBase64 = true;   // 使用 base64 保存图片
+  editor.create()
+</script>
 </body>
 </html>
