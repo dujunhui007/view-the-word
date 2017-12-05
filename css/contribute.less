@@ -51,6 +51,84 @@
     padding-bottom: 20px;
     background: #fff;
     border-radius: 5px;
+    position: relative;
+    .columnBlockChain {
+      position: absolute;
+      top: calc(~"50% - 120px");
+      left: calc(~"50% - 155px");
+      display: none;
+      width: 310px;
+      height: 120px;
+      padding: 30px 20px;
+      background:#3598db;
+      font-size: 0;
+      border-radius: 5px;
+      z-index: 999;
+      a:hover{
+        color: #000;
+      }
+      a{
+        color: #fff;
+      }
+      .columnLeft {
+        width: 75px;
+        font-size: 15px;
+        display: inline-block;
+        vertical-align: top;
+        border-right: 1px solid #4ba7e4;
+        a {
+          display: block;
+          height: 40px;
+          line-height: 40px;
+          text-align: center;
+          width: 100%;
+        }
+      }
+      .columnLeftCenter {
+        font-size: 15px;
+        display: inline-block;
+        width: 75px;
+        vertical-align: top;
+        border-left: 1px solid #025084;
+        border-right: 1px solid #4ba7e4;
+        a {
+          display: block;
+          height: 40px;
+          line-height: 40px;
+          text-align: center;
+          width: 100%;
+        }
+      }
+      .columnRightCenter {
+        font-size: 15px;
+        display: inline-block;
+        width: 75px;
+        vertical-align: top;
+        border-left: 1px solid #025084;
+        border-right: 1px solid #4ba7e4;
+        a {
+          display: block;
+          height: 40px;
+          line-height: 40px;
+          text-align: center;
+          width: 100%;
+        }
+      }
+      .columnRight {
+        font-size: 15px;
+        display: inline-block;
+        width: 75px;
+        vertical-align: top;
+        border-left: 1px solid #025084;
+        a {
+          display: block;
+          height: 40px;
+          line-height: 40px;
+          text-align: center;
+          width: 100%;
+        }
+      }
+    }
     .contributeTitle {
       display: block;
       width: 100%;
@@ -97,7 +175,6 @@
           }
         }
         li:nth-child(2){
-
           div:nth-child(2){
             background: #3598db;
             border-radius: 5px;
@@ -144,9 +221,11 @@
               display: block;
               cursor: pointer;
             }
+
           }
         }
       }
+
     }
     .contributeCount{
       padding: 40px 80px 20px 80px;
