@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ea5de26-54fd-4b07-b2c9-787728518ea6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/explainIcon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/mentionIcon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/recordIcon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/recordIcon2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/shiftIcon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/share.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chargeMoney.html" afterPath="$PROJECT_DIR$/chargeMoney.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/chargeMoney.less" afterPath="$PROJECT_DIR$/css/chargeMoney.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/chargeMoney.min.css" afterPath="$PROJECT_DIR$/css/chargeMoney.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/mentionMoney.less" afterPath="$PROJECT_DIR$/css/mentionMoney.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/mentionMoney.min.css" afterPath="$PROJECT_DIR$/css/mentionMoney.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mentionMoney.html" afterPath="$PROJECT_DIR$/mentionMoney.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myColumn.html" afterPath="$PROJECT_DIR$/myColumn.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,7 +17,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="mentionMoney.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="mentionMoney.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mentionMoney.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="200">
@@ -50,6 +37,21 @@
                 <element signature="n#table#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#tr#1;n#table#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="myColumn.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/myColumn.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="281">
+              <caret line="195" column="41" lean-forward="false" selection-start-line="195" selection-start-column="41" selection-end-line="195" selection-end-column="41" />
+              <folding>
+                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
             </state>
@@ -108,8 +110,8 @@
         <option value="$PROJECT_DIR$/css/mentionMoney.less" />
         <option value="$PROJECT_DIR$/chargeMoney.html" />
         <option value="$PROJECT_DIR$/css/chargeMoney.less" />
-        <option value="$PROJECT_DIR$/myColumn.html" />
         <option value="$PROJECT_DIR$/mentionMoney.html" />
+        <option value="$PROJECT_DIR$/myColumn.html" />
       </list>
     </option>
   </component>
@@ -210,12 +212,12 @@
       <workItem from="1512375188015" duration="10407000" />
       <workItem from="1512460723345" duration="1233000" />
       <workItem from="1512478958312" duration="7589000" />
-      <workItem from="1512530503677" duration="21522000" />
+      <workItem from="1512530503677" duration="21702000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102442000" />
+    <option name="totallyTimeSpent" value="102622000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -794,19 +796,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myColumn.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="197" column="14" lean-forward="true" selection-start-line="197" selection-start-column="14" selection-end-line="197" selection-end-column="14" />
-          <folding>
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mentionMoney.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -826,6 +815,19 @@
             <element signature="n#table#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#tr#1;n#table#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myColumn.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="195" column="41" lean-forward="false" selection-start-line="195" selection-start-column="41" selection-end-line="195" selection-end-column="41" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
