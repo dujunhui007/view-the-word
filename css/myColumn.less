@@ -379,20 +379,26 @@
         }
       }
     }
-    .rightAdvertising {
+    a.rightAdvertising {
+      display: block;
       width: 100%;
+      height: 120px;
       margin-bottom: 20px;
-      a {
-        display: block;
+      border-radius: 5px;
+      overflow: hidden;
+      img:hover{
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+      }
+      img{
         width: 100%;
-        height: 120px;
+        height: 100%;
         border-radius: 5px;
-        background: url("../images/advertisingRightImg.png") no-repeat center center;
-        background-size: cover;
-        margin-bottom: 10px;
+        -webkit-transition: All .5s ease-in-out;
+        transition: All .5s ease-in-out;
       }
     }
-    .featuredArticles {
+      .featuredArticles {
       width: 100%;
       background: #fff;
       border-radius: 5px;
