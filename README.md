@@ -1,11 +1,10 @@
-# view-the-word
-- Clone to local
+# asch-general
 
+### Clone to local
 git clone https://dujunhui007.github.io/view-the-word/
 
-- Running environment
+### Running environment
+- npm install
 
-npm install
-- Run gulp
-
-gulp
+### Run gulp
+- gulp
